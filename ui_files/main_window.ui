@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>450</width>
-    <height>300</height>
+    <height>266</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Encriptador/Desencriptador</string>
+   <string>Codificador/Decodificador</string>
   </property>
   <widget class="QWidget" name="centralwidget" native="true">
    <property name="geometry">
@@ -27,7 +27,7 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>200</width>
+      <width>201</width>
       <height>200</height>
      </rect>
     </property>
@@ -68,7 +68,7 @@
      <string>Clave:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="encrypt_button">
+   <widget class="QPushButton" name="encode_button">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -78,29 +78,29 @@
      </rect>
     </property>
     <property name="text">
-     <string>Encriptar</string>
+     <string>Codificar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="decrypt_button">
+   <widget class="QPushButton" name="decode_button">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>130</x>
       <y>230</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>Desencriptar</string>
+     <string>Decodificar</string>
     </property>
    </widget>
    <widget class="QComboBox" name="algorithm_combobox">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>230</x>
       <y>230</y>
-      <width>191</width>
-      <height>26</height>
+      <width>201</width>
+      <height>28</height>
      </rect>
     </property>
     <property name="editable">
@@ -108,17 +108,27 @@
     </property>
     <item>
      <property name="text">
-      <string>Algoritmo 1</string>
+      <string>Base16</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Algoritmo 2</string>
+      <string>Rot13</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Algoritmo 3</string>
+      <string>Delta</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RLE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LZW</string>
      </property>
     </item>
    </widget>
